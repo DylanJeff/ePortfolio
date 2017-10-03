@@ -1,0 +1,37 @@
+header {
+	color: navy;
+	text-align: center;
+	font-family: Courier;
+	font-size: 42px;
+	font-weight: bold;
+	background-color: #E2DEDE;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: Courier;
+	font-size: 21px;
+	background-color: black;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 10px;
+}
+
+li a:hover {
+	background-color: #9a9ca0;
+}
+
+img {
+	position: 500px, 500px;
+}
