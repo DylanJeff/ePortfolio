@@ -7,32 +7,114 @@ header {
 	background-color: #E2DEDE;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	font-family: Courier;
-	font-size: 21px;
-	background-color: black;
+/* ABOUT ME IMAGE */ 
+
+#aboutMeImage {
+	position: relative;
+	margin-left: 35%;
+	width: 15%;
+	height: auto;
+	float: left;
+	margin-top: 5em;
 }
 
-li {
+#aboutMeImage img {
+	width: 100%;
+	height: auto;
+}
+
+#aboutMeImage:hover img {
+	opacity:0.5;
+}
+
+#aboutMeImage:hover section {
+	opacity: 1;
+}
+
+/* 1 AND 2 IMAGE  */
+
+#oneAndTwoImage {
+	position: relative;
+	width: 15%;
+	height: auto;
+	float: left;
+	margin-top: 5em;
+}
+
+#oneAndTwoImage img {
+	width: 100%;
+	height: auto;
+}
+
+#oneAndTwoImage:hover img {
+	opacity: 0.5;
+}
+
+#oneAndTwoImage:hover section {
+	opacity: 1;
+}
+
+/* 3 AND 4 IMAGE */
+
+#threeAndFourImage {
+	position: relative;
+	margin-left: 35%;
+	width: 15%;
+	height: auto;
 	float: left;
 }
 
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 10px 10px;
+#threeAndFourImage img {
+	width: 100%;
+	height: auto;
 }
 
-li a:hover {
-	background-color: #9a9ca0;
+#threeAndFourImage:hover img {
+	opacity: 0.5;
 }
 
-img {
-	position: 500px, 500px;
-	margin-left: 25%;
+#threeAndFourImage:hover section {
+	opacity: 1;
+}
+
+/* SELF ASSESSMENT IMAGE */
+
+#selfAssessImage {
+	position: relative;
+	width: 15%;
+	height: auto;
+	float: left;
+}
+
+#selfAssessImage img {
+	width: 100%;
+	height: auto;
+}
+
+#selfAssessImage:hover img {
+	opacity: 0.5;
+}
+
+#selfAssessImage:hover section {
+	opacity: 1;
+}
+
+/* OVERLAY TEXT */
+
+#overlayText {
+	position: absolute;
+    top: 8px;
+    left: 16px;
+	opacity: 0;
+}
+
+#overlayText h1 {
+	font-family: Courier;
+	text-decoration: underline;
+}
+
+#overlayText p {
+	font-family: Courier;
+	font-weight: bold;
+	font-size: 20px;
 }
