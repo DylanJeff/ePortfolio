@@ -1,11 +1,26 @@
+body {
+	background-color: #CAE8F2;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+}
+
 header {
-	color: navy;
+	color: white;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
 	text-align: center;
-	font-family: Courier;
+	font-family: Cambria;
 	font-size: 42px;
 	font-weight: bold;
-	background-color: #E2DEDE;
+	background-color: #062F4F;
 }
+
+#content div {
+	background: green;
+}	
 
 /* ABOUT ME IMAGE */ 
 
@@ -111,10 +126,11 @@ header {
 #overlayText h1 {
 	font-family: Courier;
 	text-decoration: underline;
+	font-size: 2vw;
 }
 
 #overlayText p {
 	font-family: Courier;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 1vw;
 }
