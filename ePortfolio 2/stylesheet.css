@@ -20,7 +20,7 @@ header h1 {
 	border: 3px solid white;
 	background: black;
 	width: auto;
-	margin-left: 25%;
+	margin-left: 25%; /* shortens the header box */
 	margin-right: 25%;
 	padding-top: 1%;
 	padding-bottom: 1%;
