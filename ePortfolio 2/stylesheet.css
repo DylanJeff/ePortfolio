@@ -16,8 +16,8 @@ header {
 header h1 {
 	font-family: Cambria;
 	font-size: 3em;
-	color: white;
-	border: 3px solid white;
+	color: #F8F8FF;
+	border: 3px solid #F8F8FF;
 	background: black;
 	width: auto;
 	margin-left: 25%; /* shortens the header box */
@@ -41,18 +41,18 @@ nav ul li {
 	display: inline;
 	position: relative;
 	top: 20px;
-	border-left: 2px solid white;
-	border-right: 2px solid white;
+	border-left: 2px solid #F8F8FF;
+	border-right: 2px solid #F8F8FF;
 	padding: 10px;
 	margin: 5px;
-	color: white;
+	color: #F8F8FF;
 	font-family: Cambria;
 	font-size: 1.5em;
 }
 
 nav ul li a {
 	text-decoration: none;
-	color: white;
+	color: #F8F8FF;
 }
 
 nav ul li:hover {
@@ -68,17 +68,20 @@ nav ul li a:target {
 	color: red;
 }
 
-#content {
-	background-color: white;
+#content article {
+	background-color: #F8F8FF;
 	margin: 2%;
 	padding: 1%;
-	box-sizing: border-box;
+	width: 65%;
+	float: left;
 	overflow: auto;
+	border: 6px solid #062F4F;
 }
 
-#content h1 {
+#content article h1 {
 	color: black;
 	font-family: Cambria;
+	font-size: 2em;
 	text-decoration: underline;
 }
 
@@ -86,13 +89,14 @@ nav ul li a:target {
 	float: right;
 	width: 30%;
 	height: auto;
-	border: 6px solid black;
+	border: 6px solid #062F4F;
 	margin: 2em;
 }
 
 #content article h2 {
 	color: black;
 	font-family: Cambria;
+	font-size: 1.4em;
 	text-decoration: underline;
 }
 
@@ -101,36 +105,53 @@ nav ul li a:target {
 	font-size: 1.4em;
 }
 
-#content table, th, td {
+#content aside {
+	background-color: #F8F8FF;
+	margin: 2%;
+	padding: 1%;
+	width: 20%;
+	overflow: auto;
+	float: left;
+	border: 6px solid #062F4F;
+}
+
+#content aside h1 {
+	color: black;
+	font-family: Cambria;
+	font-size: 2em;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#content aside table, th, td {
 	border: 1px solid black;
 	font-family: Cambria;
 	font-size: 1.1em;
 	text-align: center;
 }
 
-#tables {
-	margin: auto;
-	width: 25em;
-}
-
-#content table {
+#content  aside table {
 	border-collapse: collapse;
-	float: left;
-	margin: 0.3em;
+	margin-left: auto;
+	margin-right: auto;
+	
 }
 
-#content table caption {
-	font-size: 1.3em;
+#content aside table caption h2 {
+	color: black;
+	font-family: Cambria;
+	font-size: 1.4em;
+	text-align: center;
 	text-decoration: underline;
 }
 
-#content table tr th {
+#content aside table tr th {
 	background: #062F4F;
-	color: white;
+	color: #F8F8FF;
 	padding: 0.2em;
 }
 
-#content table tr td {
+#content aside table tr td {
 	background: #CAE8F2;
 	color: black;
 	padding: 0.2em;
@@ -151,6 +172,17 @@ nav ul li a:target {
 		display: block;
 		border: 0;
 		margin-bottom: 0.4em;
+	}
+	
+	#content article {
+		width: auto;
+		clear: both;
+	}
+	
+	#content aside {
+		width: auto;
+		margin-left: 25%;
+		clear: both;
 	}
 }
 
