@@ -1,0 +1,193 @@
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #CAE8F2;
+}
+
+header {
+	text-align: center;
+	padding: 10px;
+	background: #062F4F;
+}
+
+header h1 {
+	font-family: Cambria;
+	font-size: 3em;
+	color: #F8F8FF;
+	border: 3px solid #F8F8FF;
+	background: black;
+	width: auto;
+	margin-left: 25%; /* shortens the header box */
+	margin-right: 25%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+nav {
+	width: auto;
+	height: 70px;
+	text-align: center;
+	background: black;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav ul li {
+	display: inline;
+	position: relative;
+	top: 20px;
+	border-left: 2px solid #F8F8FF;
+	border-right: 2px solid #F8F8FF;
+	padding: 10px;
+	margin: 5px;
+	color: #F8F8FF;
+	font-family: Cambria;
+	font-size: 1.5em;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #F8F8FF;
+}
+
+nav ul li:hover {
+	background: #D9DCE0;
+	border-color: #D9DCE0;
+}
+
+nav ul li:hover a {
+	color: black;
+}
+
+nav ul li a:target {
+	color: red;
+}
+
+#content article {
+	background-color: #F8F8FF;
+	margin: 2%;
+	padding: 1%;
+	width: 65%;
+	float: left;
+	overflow: auto;
+	border: 6px solid #062F4F;
+}
+
+#content article h1 {
+	color: black;
+	font-family: Cambria;
+	font-size: 2em;
+	text-decoration: underline;
+}
+
+#content article img {
+	float: right;
+	width: 30%;
+	height: auto;
+	border: 6px solid #062F4F;
+	margin: 2em;
+}
+
+#content article h2 {
+	color: black;
+	font-family: Cambria;
+	font-size: 1.4em;
+	text-decoration: underline;
+}
+
+#content article p {
+	font-family: Cambria;
+	font-size: 1.4em;
+}
+
+#content aside {
+	background-color: #F8F8FF;
+	margin: 2%;
+	padding: 1%;
+	width: 20%;
+	overflow: auto;
+	float: left;
+	border: 6px solid #062F4F;
+}
+
+#content aside h1 {
+	color: black;
+	font-family: Cambria;
+	font-size: 2em;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#content aside table, th, td {
+	border: 1px solid black;
+	font-family: Cambria;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+#content  aside table {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#content aside table caption h2 {
+	color: black;
+	font-family: Cambria;
+	font-size: 1.4em;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#content aside table tr th {
+	background: #062F4F;
+	color: #F8F8FF;
+	padding: 0.2em;
+}
+
+#content aside table tr td {
+	background: #CAE8F2;
+	color: black;
+	padding: 0.2em;
+}
+
+@media (max-width: 820px) {
+	nav {
+		width: auto;
+		height: 260px;
+		background: black;
+	}
+	
+	nav ul {
+		padding: 0;
+	}
+
+	nav ul li {
+		display: block;
+		border: 0;
+		margin-bottom: 0.4em;
+	}
+	
+	#content article {
+		width: auto;
+		clear: both;
+	}
+	
+	#content aside {
+		width: auto;
+		margin-left: 25%;
+		clear: both;
+	}
+}
+
+@media (max-width: 480px) {
+	header h1 {
+		font-size: 2em;
+	}
+}
